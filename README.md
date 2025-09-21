@@ -1,2 +1,2 @@
-# happiness
-this is my first repository
+# Happiness
+this is my first git repository
