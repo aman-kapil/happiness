@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Departments — ABES Engineering College</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="logo">🎓</div>
+      <div>
+        <h1 class="brand-title">ABES Engineering College</h1>
+        <p class="tagline">Excellence • Innovation • Growth</p>
+      </div>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="courses.html" class="nav-link">Courses</a>
+      <a href="departments.html" class="nav-link active">Departments</a>
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <main class="container section content">
+    <h2>Our Departments</h2>
+    <p class="lead">Departments at ABES Engineering College combine theory with applied projects and strong industry interaction.</p>
+
+    <div class="dept-grid">
+      <div class="dept-card">
+        <h3>Computer Science</h3>
+        <p>Areas: Algorithms, AI, Machine Learning, Systems.</p>
+        <p><strong>Facilities:</strong> Programming lab, AI lab, GPU cluster.</p>
+        <p><button class="btn btn-primary apply-now-inline">Apply to CSE</button></p>
+      </div>
+
+      <div class="dept-card">
+        <h3>Management Studies</h3>
+        <p>Areas: Business Analytics, HR, Marketing & Entrepreneurship.</p>
+        <p><strong>Activities:</strong> Industry projects, live case studies.</p>
+        <p><button class="btn btn-primary apply-now-inline">Apply to Management</button></p>
+      </div>
+
+      <div class="dept-card">
+        <h3>Commerce</h3>
+        <p>Areas: Accounting, Finance, Taxation.</p>
+        <p><strong>Labs:</strong> Financial analytics lab, trading simulation.</p>
+        <p><button class="btn btn-primary apply-now-inline">Apply to Commerce</button></p>
+      </div>
+
+      <div class="dept-card">
+        <h3>Humanities & Social Sciences</h3>
+        <p>Areas: Communication, Ethics, Sociology and Writing Workshops.</p>
+        <p><button class="btn btn-primary apply-now-inline">Apply to Humanities</button></p>
+      </div>
+
+      <div class="dept-card">
+        <h3>Mathematics & Statistics</h3>
+        <p>Areas: Applied Math, Data Modeling, Statistical Computing.</p>
+        <p><button class="btn btn-primary apply-now-inline">Apply to Mathematics</button></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>ABES Engineering College</h4>
+        <p>© 2025 ABES Engineering College</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: info@abes.ac.in</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- modal -->
+  <div id="admissionModal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="closeModal">✕</button>
+      <div class="modal-split">
+        <div class="modal-left">
+          <h2 id="admissionTitle">Admission Form — 2025</h2>
+          <p class="muted">Start your application.</p>
+        </div>
+        <div class="modal-right">
+          <form id="admissionForm" class="form">
+            <div class="form-row">
+              <label for="fullname">Full Name</label>
+              <input id="fullname" name="fullname" type="text" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-row">
+              <label for="course">Choose Course</label>
+              <select id="course" name="course" required>
+                <option value="">-- Select --</option>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>MCA</option>
+                <option>MBA</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="phone">Mobile</label>
+              <input id="phone" name="phone" type="tel" pattern="[0-9]{10}" required />
+            </div>
+            <div class="form-row form-actions">
+              <button type="submit" class="btn btn-primary full">Submit Application</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
