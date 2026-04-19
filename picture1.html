@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Color Change</title>
+</head>
+
+<body>
+
+   
+    <img id="images" src="images/ima.jpg" width="300" alt="Your Image">
+
+    <br><br>
+
+    
+    <button onclick="changeColor()">Change Color</button>
+
+    
+    <script>
+        function changeColor() {
+            var img = document.getElementById("images");
+
+            if (img.style.filter === "grayscale(100%)") {
+                img.style.filter = "none";
+            } else {
+                img.style.filter = "grayscale(100%)";
+            }
+        }
+    </script>
+
+</body>
+</html>
